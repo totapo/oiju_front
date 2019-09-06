@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.page {
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+}
+
+.upBox {
+    width: 80vw;
+    height: 15vh;
+    display: flex;
+    margin: auto;
+  }
+
+.tableBox {
+    display: flex;
+    width: 74vw;
+    margin: auto;
+    margin-left: 10vw;
+    max-height: 65vh;
+    overflow-y: scroll;
+  }
+
+.button {
+    margin-left: 10px !important;
+  }
+.textField {
+    width: 80%;
+    margin: auto;
+  }
+.dense {
+    margin-top: 19;
+  }
+.menu {
+    width: 200;
+}
