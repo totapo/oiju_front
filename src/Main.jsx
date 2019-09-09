@@ -35,7 +35,7 @@ export default class Main extends Component {
   }
 
   updateList() {
-    let url = process.env.REACT_APP_BACKEND_URL;
+    let url = "http://oiju-back/";
     if (!url) url = 'http://localhost:8080/';
     axios.get(url + 'api/messages', { crossdomain: true, headers: { 'Access-Control-Allow-Origin': '*' } }).then(
       (res) => {
@@ -46,7 +46,7 @@ export default class Main extends Component {
 
   }
   addToList() {
-    let url = process.env.REACT_APP_BACKEND_URL;
+    let url = "http://oiju-back/";
     if (!url) url = 'http://localhost:8080/';
     axios.post(url + 'api/messages', {message: this.state.textFieldValue}).then(
       ()=> this.updateList(), this.setState({textFieldValue: ''})
